@@ -1,0 +1,115 @@
+body{
+  /* max-width: 1180px; */
+  margin: 0;
+  background-color: #615f55;
+}
+li{
+  list-style-type:none;
+}
+image{
+  display: block;
+}
+.allform{
+  display: flex;
+  gap: 10px; 
+  justify-content: center;
+
+}
+button{
+  display: inline-block;
+  white-space: nowrap;
+  width: 75px;
+  height: 40px;
+  border-radius: 8px;
+  padding: 8px 16px 8px 16px;
+  background-color: #4E75FF;
+  border: 0;
+  color: #fff;
+}
+input{
+  width: 272px;
+  height: 40px;
+  border-radius: 4px;
+  border: 2px solid #585751;
+  outline:none;
+
+}
+input:focus{
+  border-color:  #4E75FF;
+  
+}
+input:hover{
+  border-color: #000000;
+}
+button:hover{
+  background-color: #6C8CFF;
+}
+.hide {
+  visibility: hidden;
+}
+.downBtn{
+  display: flex;
+  justify-content: center;
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 40px;
+  aspect-ratio: 2;
+  --_g: no-repeat radial-gradient(circle closest-side,#000 90%,#0000);
+  background: 
+    var(--_g) 0%   50%,
+    var(--_g) 50%  50%,
+    var(--_g) 100% 50%;
+  background-size: calc(100%/3) 50%;
+  animation: l3 1s infinite linear;
+}
+@keyframes l3 {
+    20%{background-position:0%   0%, 50%  50%,100%  50%}
+    40%{background-position:0% 100%, 50%   0%,100%  50%}
+    60%{background-position:0%  50%, 50% 100%,100%   0%}
+    80%{background-position:0%  50%, 50%  50%,100% 100%}
+}
+.btnLoadMore{
+  text-align: center;
+  padding: 0;
+}
+.allPicture{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:24px;
+  padding:0%;
+}  
+
+.onePicture{
+  width: 360px;
+  background-color: #FFFFFF;
+  border: 1px solid #808080;
+}
+
+.pictureImage{
+  width: 360px;
+  height: 230px;
+}
+.tags{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  
+}
+.tags p{
+  width: 34px;
+  height: 40px;
+  flex: 1;
+  padding-right: 10px;
+  margin: 0;
+}
+.describeBtn{
+  width: auto;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
